@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GINALY COSMETICS</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./app/dist/app.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header data-aos="fade-down">
+        <div class="container">
+            <div class="header">
+                <div class="header__logo">GINALY COSMETICS</div>
+                <div class="header__right">
+                    <ul class="nav">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                    <div class="user-menu">
+                        <i class='bx bx-cart-alt'></i>
+                        <span class="menu-toggle">
+                            <i class='bx bx-menu-alt-right'></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h2 class="text-center">FEEDBACK</h2>
+        <form id="feedbackForm" action="submit_feedback.php" method="post">
+            <div class="form-group row">
+                <label for="name" class="col-sm-2 col-form-label">Nama:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label for="gender" class="col-sm-2 col-form-label">Jenis Kelamin:</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="gender" name="gender" required>
+                        <option value="male">Laki-laki</option>
+                        <option value="female">Perempuan</option>
+                    </select>
+                </div>
+            </div>
+            
+            
+            <div class="form-group row">
+                <label for="feedback" class="col-sm-2 col-form-label">Feedback:</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="feedback" name="feedback" rows="4" required></textarea>
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Penilaian:</label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="trustworthy" name="qualities" value="trustworthy">
+                        <label class="form-check-label" for="trustworthy">Sangat Amanah</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="good" name="qualities" value="good">
+                        <label class="form-check-label" for="good">Amanah</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="beautiful" name="qualities" value="beautiful">
+                        <label class="form-check-label" for="beautiful">Biasa Aja</label>
+                    </div>
+                </div>
+            </div>
+            
+            <fieldset>
+                <legend>Seberapa Berguna website ini bagi anda?</legend>
+                <input type="radio" name="Sangat">Sangat Berguna<br>
+                <input type="radio" name="biasa">Berguna<br>
+                <input type="radio" name="cukup">Biasa saja<br>
+            </fieldset>
+
+            <div class="form-group row">
+                <label for="comments" class="col-sm-2 col-form-label">Komentar Tambahan:</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="comments" name="comments" rows="4"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-primary">Kirim</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="section">
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="social-logos">
+                        <div class="social-logos__item" data-aos="slide-right">
+                            <a href="#">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                        </div>
+                        <div class="social-logos__item" data-aos="slide-down">
+                            <a href="#">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </div>
+                        <div class="social-logos__item" data-aos="slide-left">
+                            <a href="#">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="footer-menu">
+                        <li><a href="#">Info</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Marketing</a></li>
+                        <li><a href="#">Term of Use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./app/js/app.js"></script>
+    <script src="scriptcontact.js"></script>
+</body>
+
+</html>

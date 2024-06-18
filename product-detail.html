@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk - GINALY COSMETICS</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet' />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header data-aos="fade-down">
+        <div class="container">
+            <div class="header">
+                <div class="header__logo">GINALY COSMETICS</div>
+                <div class="header__right">
+                    <ul class="nav">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="contactus.html">CONTACT US</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                    </ul>
+                    <div class="user-menu">
+                        <i class='bx bx-cart-alt'></i>
+                        <span class="menu-toggle">
+                            <i class='bx bx-menu-alt-right'></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img id="product-image" src="./assets/1icesorbet.jpeg" alt="Product Image" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h2 id="product-name">Skintific Ice Sorebet</h2>
+                <p id="product-price">Rp.125.000</p>
+                <p id="product-description">Skintific Ice Sorbet Makeup Remover memiliki tekstur gel berwarna putih yang menyerupai ice cream sorbet. Ketika diusapkan ke kulit, gel tersebut akan membersihkan makeup waterproof dengan mudah, tanpa emulsi dan tanpa minyak sama sekali. Memberikan zero feeling oil dan cukup ringan untuk digunakan oleh kulit berminyak. Karena teksturnya yang ringan hampir mirip dengan Ice Sorbet, makanya tidak heran produknya juga diberi nama yang sama. How unique!.
+                    Cleanser ini juga mengadopsi teknologi Bi-Phase Micromolecule, yang membuatnya ampuh dalam menghapus segala jenis kotoran yang ada di wajah, mulai dari makeup yang waterproof sampai kotoran yang menempel di pori-pori wajah.
+                    Dari segi kandungan, Skintific Ice Sorbet Makeup Remover memiliki dua kandungan utama yaitu Cetraria Islandica Extract dan Switzerland Algae Extract. Keduanya mampu menenangkan kulit kemerahan, merawat skin barrier, menghidrasi, serta menjaga kelembapan alami kulit.
+                    Jadi, tidak hanya membantu membersihkan wajah, tapi produk ini juga bikin kulit sehat dan meminimalisir munculnya breakout! </p>
+                <button class="btn btn-primary">Tambah ke Keranjang</button>
+                <button class="btn btn-secondary" onclick="window.location.href='shop.html'">Kembali</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        const products = [
+            {
+                id: 1,
+                name: 'BODY LOTION A THOUSAND WISHES',
+                price: 'Rp. 180.000',
+                description: 'Deskripsi Kegunaan: membuat kulit mu terasa segar, bersih, dan wanginya indah. Mengapa kamu akan menyukainya: Diresapi dengan kebaikan alami vitamin E dan aloe Berbusa ringan dan berbuih Pembersih yang lembut dsebut juga perawatan harian Tidak mengeringkan dan telah diuji oleh dokter kulit Botol yang terbuat dari 50% plastik daur ulang.',
+                image: './assets/1bodylotion.jpeg'
+            },
+            {
+                id: 2,
+                name: 'TONER NPURE CENTELLA ASIATICA',
+                price: 'Rp. 100.000',
+                description: 'Deskripsi Kegunaan: oner No. 1 di Indonesia dengan Daun Centella asli didalamnya. Best Selling Acne Toner di Indonesia. Hydrating toner dengan pH balance yang mengandung Real Centella Leaves, 11x Acne Power Fighter, dan Tranexamic Acid untuk membantu membersihkan wajah dari sisa kotoran, mencerahkan kulit wajah, merawat kulit berjerawat serta membuat kulit terasa segar, lembut, dan lembap.Cocok untuk berbagai jenis jerawat di wajah, seperti: ● Beruntusan, ● Jerawat kemerahan, ● Jerawat papula, ● Jerawat pustula, ● Jerawat cystic, ● Whitehead / blackhead / komedo, ● Maskne',
+                image: './assets/1centella.jpeg'
+            },
+            {
+                id: 3,
+                name: 'SERUM HERBIVORE CLOUD JELLY',
+                price: '250.000',
+                description: 'Deskripsi Kegunaan: Cocok untuk semua jenis kulit, Cloud Jelly Plumping Hydration Serum dari Herbivore mengandung jamur tremella, asam hialuronat dan alternatif kolagen vegan yang akan membuat kulit terasa lembap dan kenyal. Pelembap super alami, jamur tremella, dapat menahan hingga 500 kali beratnya dalam air dan terbukti secara ilmiah dapat mempertahankan kelembapan lebih baik daripada asam hialuronat topikal. Serum nabati yang ringan dan tidak lengket ini wajib dicoba oleh mereka yang ingin mengganti serum pelembap biasa dengan sesuatu yang berbeda dan berbahan dasar tumbuhan.',
+                image:'./assets/1cloudjelly.jpeg'
+            }
+            
+        ];
+
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = parseInt(urlParams.get('id'), 10);
+        const product = products.find(p => p.id === productId);
+
+        if (product) {
+            document.getElementById('product-image').src = product.image;
+            document.getElementById('product-name').innerText = product.name;
+            document.getElementById('product-price').innerText = product.price;
+            document.getElementById('product-description').innerText = product.description;
+        }
+    </script>
+</body>
+</html>

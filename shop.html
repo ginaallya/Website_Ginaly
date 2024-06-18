@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GINALY COSMETICS</title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./app/dist/app.css">
+</head>
+
+<body>
+    <style>
+        .table-container {
+            text-align: center;
+        }
+    table {
+        border-collapse: collapse;
+        width: 90%;
+        margin: 0 auto;
+    }
+    th, td {
+        border: 1px solid rgb(33, 31, 34);
+        padding: 8px;
+        text-align: left;   
+    }
+    th {
+        background-color: #ffbee2;
+    }
+    caption {
+        caption-side: top;
+        font-weight: bold;
+    }
+    .center {
+text-align: center;
+    }
+    h2 {
+            text-align: center;
+        }
+
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .swiper-slide {
+        flex: 0 0 auto;
+    }
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    .img-wrapper {
+        width: 100%;
+        height: 250px; /* Menentukan tinggi tetap untuk gambar */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .img-wrapper img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+    .action {
+        margin-top: 10px;
+    }
+    .info {
+        margin-top: 10px;
+    }
+    .btn {
+        background-color: #f0c14b;
+        border: 1px solid #a88734;
+        color: #111;
+        padding: 5px 10px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .price s {
+        color: #999;
+    }
+    .price span {
+        color: red;
+        font-weight: bold;
+    }
+    
+</style>
+    <!-- header -->
+    <header data-aos="fade-down">
+        <div class="container">
+            <div class="header">
+                <div class="header__logo">GINALY COSMETICS</div>
+                <div class="header__right">
+                    <ul class="nav">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="contactus.html">CONTACT US</a></li>
+                    </ul>
+                    <div class="user-menu">
+                        <i class='bx bx-cart-alt'></i>
+                        <span class="menu-toggle">
+                            <i class='bx bx-menu-alt-right'></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- hero slider -->
+    <!-- motion -->
+    <!-- featured products -->
+
+    <div class="container">
+        <div class="section">
+            <div class="section__header" style="text-align: center; font-weight: bold;">
+                BEST SELLERS GINALY
+            </div>
+            <div class="section__content">
+                <div class="product-grid">
+                    <div class="product-card" data-aos="flip-down">
+                        <div class="img-wrapper">
+                            <img src="./assets/1bodylotion.jpeg" alt="product">
+                            <div class="action">
+                                <button class="btn sm" onclick="window.location.href='product-detail.html?id=1'">SHOP NOW!</button>
+                            </div>
+                        </div>
+                        <div class="info" style="text-align: center;">
+                            <div class="name">Body Lotion <br> A Thousand Wishes</div>
+                            <div class="price">Rp. 180.000</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-aos="flip-down">
+                        <div class="img-wrapper">
+                            <img src="./assets/1centella.jpeg" alt="product">
+                            <div class="action">
+                                <button class="btn sm" onclick="window.location.href='product-detail.html?id=2'">SHOP NOW!</button>
+                            </div>
+                        </div>
+                        <div class="info" style="text-align: center;">
+                            <div class="name">Toner Npure <br> Centella Asiatica</div>
+                            <div class="price">Rp. 100.000</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-aos="flip-down">
+                        <div class="img-wrapper">
+                            <img src="./assets/1cloudjelly.jpeg" alt="product">
+                            <div class="action">
+                                <button class="btn sm" onclick="window.location.href='product-detail.html?id=3'" >SHOP NOW!</button>
+                            </div>
+                        </div>
+                        <div class="info" style="text-align: center;">
+                            <div class="name">Serum Herbivore <br> Cloud Jelly</div>
+                            <div class="price">Rp. 250.000</div>
+                        </div>
+                    </div>
+                    <div class="product-card" data-aos="flip-down">
+                        <div class="img-wrapper">
+                            <img src="./assets/1icesorbet.jpeg" alt="product">
+                            <div class="action">
+                                <button class="btn sm" onclick="window.location.href='product-detail.html?id=4'">SHOP NOW!</button>
+                            </div>
+                        </div>
+                        <div class="info" style="text-align: center;">
+                            <div class="name">Skintific <br> Ice Sorbet</div>
+                            <div class="price">Rp. 125.000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="container">
+        <div class="section">
+            <div class="section__header" style="text-align: center; font-weight: bold;">
+                NEW FAVORITE GINALY
+            </div>
+            
+            <div class="section__content">
+                <div class="swiper featured-product-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-card" data-aos="flip-left">
+                                <div class="img-wrapper">
+                                    <img src="./assets/sunscreen.jpeg" alt="product">
+                                </div>
+                                <div class="action">
+                                    <button class="btn sm"> SHOP NOW!</button>
+                                </div>
+                                <div class="info">
+                                    <div class="name">Sunscreen <br> Amaterasun Physical</div>
+                                    <div class="price"><s style="font-style: italic;">Rp.110.000</s> <br> <span>Rp.89.000</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card" data-aos="flip-left">
+                                <div class="img-wrapper">
+                                    <img src="./assets/WhatsApp Image 2024-06-16 at 19.25.12 (1).jpeg" alt="product">
+                                </div>
+                                <div class="action">
+                                    <button class="btn sm">SHOP NOW</button>
+                                </div>
+                                <div class="info">
+                                    <div class="name">Sunscreen <br> Amaterasun Uv Serum</div>
+                                    <div class="price"><s style="font-style: italic;">Rp.120.000</s> <br> <span>Rp.100.000</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card" data-aos="flip-left">
+                                <div class="img-wrapper">
+                                    <img src="./assets/WhatsApp Image 2024-06-16 at 19.25.12.jpeg" alt="product">
+                                </div>
+                                <div class="action">
+                                    <button class="btn sm">SHOP NOW!</button>
+                                </div>
+                                <div class="info">
+                                    <div class="name">Npure <br> Cica Clear Pad</div>
+                                    <div class="price"><s style="font-style: italic;">Rp.140.000</s> <br> <span>Rp.97.000</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card" data-aos="flip-left">
+                                <div class="img-wrapper">
+                                    <img src="./assets/1mamabutter.jpeg" alt="product">
+                                </div>
+                                <div class="action">
+                                    <button class="btn sm">SHOP NOW!</button>
+                                </div>
+                                <div class="info">
+                                    <div class="name">Body Soap <br> Mama Butter</div>
+                                    <div class="price">Rp. 250.000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-card" data-aos="flip-left">
+                                <div class="img-wrapper">
+                                    <img src="./assets/1cloudjelly.jpeg" alt="product">
+                                </div>
+                                <div class="action">
+                                    <button class="btn sm"  onclick="window.location.href='product-detail.html?id=5'">SHOP NOW!</button>
+                                </div>
+                                <div class="info">
+                                    <div class="name">Serum Herbivore Cloud Jelly</div>
+                                    <div class="price">Rp. 470.000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Table -->
+    <div class="table-container">
+        <h2>Tabel Rekapitulasi Stock Produk</h2>
+        <table>
+            <caption>Stock Produk </caption>
+            <tr>
+                <th>Merk</th>
+                <th>Jenis Skincare</th>
+                <th>Stock</th>
+                <th>Info Produk</th>
+            </tr>
+            <tr>
+                <td>Body Lotion A Thousand Wishes</td>
+                <td>Body Lotion</td>
+                <td>1000</td>
+                <td>Ready</td>
+            </tr>
+            <tr>
+                <td>Toner Npure Centella Asiatica</td>
+                <td>Toner</td>
+                <td>125</td>
+                <td>Ready</td>
+            </tr>
+            <tr>
+                <td>Serum Herbivore Cloud Jelly</td>
+                <td>Serum</td>
+                <td>350</td>
+                <td>Pre-Order</td>
+            </tr>
+            <tr>
+                <td>Skintific Ice Sorbet</td>
+                <td>Make Up Remover</td>
+                <td>783</td>
+                <td>Ready</td>
+            </tr>
+            <tr>
+                <td>Sunscreen Amaterasun Physical</td>
+                <td>Sunscreen</td>
+                <td>658</td>
+                <td>Pre-Order</td>
+            </tr>
+            <tr>
+                <td>Sunscreen Amaterasun Uv Serum</td>
+                <td>Sunscreen</td>
+                <td>267</td>
+                <td>Pre-Order</td>
+            </tr>
+            <tr>
+                <td>Npure Cica Clear Pad</td>
+                <td>Exfoliasi</td>
+                <td>189</td>
+                <td>Ready</td>
+            </tr>
+            <tr>
+                <td>Body Soap Mama Butter</td>
+                <td>Body Soap</td>
+                <td>2000</td>
+                <td>Ready</td>
+            </tr>
+            <tr>
+                <td>Serum Herbivore Cloud Jelly</td>
+                <td>Serum</td>
+                <td>800</td>
+                <td>Ready</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="overlay"></div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./app/js/app.js"></script>
+</body>
+
+</html>
